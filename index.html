@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sahana Priyanka | Portfolio</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      background: #0f172a;
+      color: #e2e8f0;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 50px;
+      background: #020617;
+      position: sticky;
+      top: 0;
+    }
+
+    header h1 {
+      color: #38bdf8;
+    }
+
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #cbd5f5;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: #38bdf8;
+    }
+
+    .hero {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      padding: 60px 20px;
+    }
+
+    .hero img {
+      width: 250px;
+      border-radius: 50%;
+      border: 4px solid #38bdf8;
+    }
+
+    .hero-text h2 {
+      font-size: 2.5rem;
+    }
+
+    .hero-text span {
+      color: #38bdf8;
+    }
+
+    section {
+      padding: 50px;
+    }
+
+    .card {
+      background: #020617;
+      padding: 20px;
+      margin: 15px 0;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    }
+
+    .skills span {
+      display: inline-block;
+      background: #1e293b;
+      margin: 5px;
+      padding: 8px 12px;
+      border-radius: 8px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #020617;
+    }
+
+    button {
+      margin-top: 15px;
+      padding: 10px 20px;
+      border: none;
+      background: #38bdf8;
+      color: black;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: #0ea5e9;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>Sahana</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <img src="sahana_photo.jpg" alt="Profile" />
+    <div class="hero-text">
+      <h2>Hi, I'm <span>Sahana Priyanka</span></h2>
+      <p>Fresher | Java Full Stack Developer</p>
+      <button onclick="downloadResume()">Download Resume</button>
+    </div>
+  </section>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <div class="card">
+      <p>
+        I am a passionate and detail-oriented Computer Science undergraduate with a strong foundation in
+        <b>Java, Web Development, and Microservices architecture</b>. I enjoy transforming ideas into
+        real-world applications that are scalable, efficient, and user-friendly.
+
+        During my academic journey, I have built hands-on projects involving <b>React and MySQL</b>,
+        where I focused on writing clean code, designing RESTful APIs, and understanding system design principles.
+        My exposure to <b>SDLC methodologies</b> and networking concepts (CCNA) helps me approach problems from both
+        development and infrastructure perspectives.
+
+        I am a quick learner who adapts to new technologies with curiosity and consistency. I value teamwork,
+        problem-solving, and continuous improvement. Currently, I am seeking an opportunity as a
+        <b>Software Developer / Java Full Stack Developer</b> where I can contribute, grow, and build impactful
+        solutions.
+      </p>
+    </div>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="card skills">
+      <span>HTML</span><span>CSS</span><span>JavaScript</span>
+      <span>Java</span><span>React (Basics)</span><span>SQL</span>
+      <span>Microservices</span><span>SDLC</span>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+
+    <div class="card">
+      <h3>Microservices-Based Campus Sustainability Tracker</h3>
+     
+      <ul>
+        <li>Developed a scalable microservices-based system to monitor energy, water, waste, and biodiversity metrics.</li>
+        <li>Utilized React.js, MySQL, and Eureka Server for building and managing distributed services.</li>
+        <li>Designed and implemented RESTful APIs with Postman testing and Swagger documentation.</li>
+        <li>Built an interactive React frontend with secure authentication and role-based access control.</li>
+      </ul>
+      <p><b>Tech Stack:</b> React.js, Spring Boot, MySQL, Eureka Server</p>
+      <a href="https://github.com/sahanapriyanka/Microservice-based-Campus-Sustainability-Tracker" target="_blank">
+        <button>View Project</button>
+      </a>
+    </div>
+
+    <div class="card">
+      <h3>Enterprise Network Design using VLANs</h3>
+      
+      <ul>
+        <li>mplemented Inter-VLAN routing to enable seamless communication between IT, HR, and Server Farm departments ng a Layer-3 device, demonstrating effective enterprise network segmentation and traffic management.</li>
+        <li>Utilized Cisco Packet Tracer to design, configure, and simulate the network topology and services, validating connectivity, routing efficiency, and overall network performance.</li>
+       
+      </ul>
+      <p><b>Tools Used:</b> Cisco Packet Tracer</p>
+      <a href="https://github.com/sahanapriyanka/DeptNetworkDesign_IT_HR_ServerFarm" target="_blank">
+        <button>View Project</button>
+      </a>
+
+    </div>
+
+  </section>
+
+  <section id="certifications">
+    <h2>Certifications</h2>
+
+    <div class="card">
+      <h3>CCNA 1: Introduction to Networks</h3>
+      <p>
+        Gained foundational knowledge of networking concepts including OSI model, IP addressing,
+        and basic network configuration.
+      </p>
+      <a href="./cisco1.pdf.pdf">
+        <button>View Certificate</button>
+      </a>
+    </div>
+
+    <div class="card">
+      <h3>CCNA 2: Switching, Routing, and Wireless Essentials</h3>
+      <p>
+        Learned advanced networking concepts including VLANs, inter-VLAN routing, and wireless networking fundamentals.
+      </p>
+      <a href="./ccna2.pdf" target="_blank">
+        <button>View Certificate</button>
+      </a>
+    </div>
+
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <div class="card">
+      <p>Email: sahanapriyankars@gmail.com</p>
+      <p>Phone: +91 9972802876</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2026 Sahana Priyanka</p>
+  </footer>
+
+  <script>
+    function downloadResume() {
+      window.open("https://drive.google.com/file/d/1UI2d_qc-4PU9WNvBQQq-xTbTYp7_CQaV/view?usp=drive_link", "_blank");
+    }
+  </script>
+
+</body>
+
+</html>
